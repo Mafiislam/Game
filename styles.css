@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.imgur.com/8HKYKZQ.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.tile.active {
+    background-image: url('https://i.imgur.com/kR21sOo.png');
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#score {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 20px;
+}
